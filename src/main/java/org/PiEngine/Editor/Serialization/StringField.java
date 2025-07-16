@@ -17,9 +17,15 @@ public class StringField extends SerializeField<String> {
         super(name, label);
     }
 
+    @Override
     public void set(String initialValue) {
         this.value = initialValue;
         buffer.set(initialValue);
+    }
+
+    @Override
+    public String getValue() {
+        return value;
     }
 
     public void syncWith(Supplier<String> getter, Consumer<String> setter) {

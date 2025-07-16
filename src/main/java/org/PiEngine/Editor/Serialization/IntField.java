@@ -13,8 +13,14 @@ public class IntField extends SerializeField<Integer> {
         super(name, label);
     }
 
+    @Override
     public void set(Integer initialValue) {
         this.value[0] = initialValue;
+    }
+
+    @Override
+    public Integer getValue() {
+        return value[0];
     }
 
     public void syncWith(Supplier<Integer> getter, Consumer<Integer> setter) {

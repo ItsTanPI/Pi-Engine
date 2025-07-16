@@ -19,6 +19,16 @@ public abstract class SerializeField<T>
     public abstract void draw();
     public abstract void syncWith(Supplier<T> getter, Consumer<T> setter);
     public abstract void handle();
+    /**
+     * Sets the value of the field.
+     * @param value The value to set
+     */
+    public abstract void set(T value);
+    /**
+     * Gets the value of the field.
+     * @return The value
+     */
+    public abstract T getValue();
 }
 
 

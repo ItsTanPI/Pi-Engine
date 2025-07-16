@@ -100,4 +100,11 @@ public class VectorField extends SerializeField<Vector>
         // ImGui.popItemWidth();
     }
 
+    @Override
+    public Vector getValue() 
+    {
+        return get();
+    }
+
+
 }

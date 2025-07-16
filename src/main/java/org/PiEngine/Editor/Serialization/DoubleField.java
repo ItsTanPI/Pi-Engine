@@ -13,8 +13,14 @@ public class DoubleField extends SerializeField<Double> {
         super(name, label);
     }
 
+    @Override
     public void set(Double initialValue) {
         this.value[0] = initialValue.floatValue();  // Convert Double to float for ImGui compatibility
+    }
+
+    @Override
+    public Double getValue() {
+        return (double) value[0];
     }
 
     public void syncWith(Supplier<Double> getter, Consumer<Double> setter) {

@@ -13,8 +13,14 @@ public class FloatField extends SerializeField<Float> {
         super(name, label);
     }
 
+    @Override
     public void set(Float initialValue) {
         this.value[0] = initialValue;
+    }
+
+    @Override
+    public Float getValue() {
+        return value[0];
     }
 
     public void syncWith(Supplier<Float> getter, Consumer<Float> setter) {

@@ -13,8 +13,14 @@ public class BooleanField extends SerializeField<Boolean> {
         super(name, label);
     }
 
+    @Override
     public void set(Boolean initialValue) {
         this.value = initialValue;
+    }
+
+    @Override
+    public Boolean getValue() {
+        return value;
     }
 
     public void syncWith(Supplier<Boolean> getter, Consumer<Boolean> setter) {
@@ -26,6 +32,7 @@ public class BooleanField extends SerializeField<Boolean> {
         if (getter != null && setter != null) {
             value = getter.get();
             
+
 
 
 

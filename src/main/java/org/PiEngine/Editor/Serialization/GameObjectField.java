@@ -20,8 +20,14 @@ public class GameObjectField extends SerializeField<GameObject> {
         super(name, label);
     }
     
+    @Override
     public void set(GameObject initialValue) {
         this.value = initialValue;
+    }
+
+    @Override
+    public GameObject getValue() {
+        return value;
     }
 
     private Field field = null;

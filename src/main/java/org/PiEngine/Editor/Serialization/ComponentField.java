@@ -26,8 +26,14 @@ public class ComponentField extends SerializeField<Component> {
         this.fieldType = fieldType;
     }
     
+    @Override
     public void set(Component initialValue) {
         this.value = initialValue;
+    }
+
+    @Override
+    public Component getValue() {
+        return value;
     }
 
     private Field field = null;

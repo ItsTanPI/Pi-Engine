@@ -21,8 +21,14 @@ public class TextureField extends SerializeField<Texture>
         super(name, label);
     }
 
+    @Override
     public void set(Texture initialValue) {
         this.value = initialValue;
+    }
+
+    @Override
+    public Texture getValue() {
+        return value;
     }
 
     public void syncWith(Supplier<Texture> getter, Consumer<Texture> setter) {

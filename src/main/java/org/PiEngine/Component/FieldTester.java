@@ -1,5 +1,9 @@
 package org.PiEngine.Component;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import org.PiEngine.GameObjects.GameObject;
 import org.PiEngine.Math.Vector;
 
@@ -18,4 +22,12 @@ public class FieldTester extends Component
     public Follower Follower;
     public RendererComponent RendererComponent;
     public CameraComponent CameraComponent;
+    public ArrayList<Float> ListFloat = new ArrayList<>(Arrays.asList(1.0f, 2.0f, 3.0f));
+
+
+    @Override
+    public void start()
+    {
+        ListFloat.add(Float);
+    }
 }

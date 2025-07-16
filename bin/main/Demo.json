@@ -6,7 +6,7 @@
       "components": [
         {
           "name": "CameraComponent",
-          "id": 2,
+          "id": 5,
           "properties": {
             "Far": 100.0,
             "FOV": 70.0,
@@ -39,7 +39,7 @@
       "components": [
         {
           "name": "RendererComponent",
-          "id": 4,
+          "id": 7,
           "properties": {
             "FlipY": false,
             "size": 2.5,
@@ -55,7 +55,7 @@
         },
         {
           "name": "FieldTester",
-          "id": 5,
+          "id": 8,
           "properties": {
             "Movement": "/Scene/Player<Movement>",
             "Gameobject": "/Scene/Player",
@@ -63,20 +63,6 @@
             "Follower": "/Scene/Enemy<Follower>",
             "CameraComponent": "/Scene/Main Camera<CameraComponent>",
             "SpinComponent": "/Scene/Holder<SpinComponent>"
-          }
-        },
-        {
-          "name": "Movement",
-          "id": 0,
-          "properties": {
-            "useRun1": true,
-            "isGrounded": true,
-            "animSpeed": 0.15,
-            "gravity": -30.0,
-            "jumpForce": 15.0,
-            "animTimer": 0.0,
-            "velocityY": 0.0,
-            "speed": 10.0
           }
         }
       ],
@@ -105,7 +91,7 @@
       "components": [
         {
           "name": "Follower",
-          "id": 7,
+          "id": 11,
           "properties": {
             "Target": "/Scene/Holder/ChildHolder/CChildHolder",
             "zindex": 0.0,
@@ -115,7 +101,7 @@
         },
         {
           "name": "RendererComponent",
-          "id": 8,
+          "id": 12,
           "properties": {
             "FlipY": false,
             "size": 2.5,
@@ -155,7 +141,7 @@
       "components": [
         {
           "name": "Follower",
-          "id": 10,
+          "id": 14,
           "properties": {
             "Target": "/Scene/Enemy",
             "zindex": 0.0,
@@ -165,7 +151,7 @@
         },
         {
           "name": "RendererComponent",
-          "id": 11,
+          "id": 15,
           "properties": {
             "FlipY": false,
             "size": 2.5,
@@ -205,7 +191,7 @@
       "components": [
         {
           "name": "Follower",
-          "id": 13,
+          "id": 17,
           "properties": {
             "Target": "/Scene/Enemy1",
             "zindex": 0.0,
@@ -215,7 +201,7 @@
         },
         {
           "name": "RendererComponent",
-          "id": 14,
+          "id": 18,
           "properties": {
             "FlipY": false,
             "size": 2.5,
@@ -255,7 +241,7 @@
       "components": [
         {
           "name": "Follower",
-          "id": 16,
+          "id": 20,
           "properties": {
             "Target": "/Scene/Enemy2",
             "zindex": 0.0,
@@ -265,7 +251,7 @@
         },
         {
           "name": "RendererComponent",
-          "id": 17,
+          "id": 21,
           "properties": {
             "FlipY": false,
             "size": 2.5,
@@ -305,7 +291,7 @@
       "components": [
         {
           "name": "SpinComponent",
-          "id": 23,
+          "id": 27,
           "properties": {
             "dir": 1.0,
             "speed": 100.0
@@ -313,7 +299,7 @@
         },
         {
           "name": "RendererComponent",
-          "id": 24,
+          "id": 28,
           "properties": {
             "FlipY": false,
             "size": 2.5,
@@ -333,7 +319,7 @@
           "components": [
             {
               "name": "RendererComponent",
-              "id": 22,
+              "id": 26,
               "properties": {
                 "FlipY": false,
                 "size": 2.5,
@@ -353,7 +339,7 @@
               "components": [
                 {
                   "name": "RendererComponent",
-                  "id": 21,
+                  "id": 25,
                   "properties": {
                     "FlipY": false,
                     "size": 2.5,
