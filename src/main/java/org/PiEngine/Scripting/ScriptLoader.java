@@ -4,6 +4,7 @@ import java.io.File;
 import java.net.URL;
 import java.net.URLClassLoader;
 
+import org.PiEngine.Main;
 import org.PiEngine.Component.Component;
 import org.PiEngine.Engine.Console;
 import org.PiEngine.Utils.ComponentFactory;
@@ -50,7 +51,7 @@ public class ScriptLoader
         {
             try 
             {
-                instance = new ScriptLoader("Compiled");
+                instance = new ScriptLoader(Main.ResourceFolder + "Compiled");
             } 
             catch (Exception e) 
             {
